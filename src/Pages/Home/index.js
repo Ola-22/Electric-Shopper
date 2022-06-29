@@ -1,5 +1,4 @@
 import * as S from "./style";
-import { useNavigate } from "react-router-dom";
 import Header from "../../Components/Header";
 import Download from "../../Components/Download";
 import Video from "../../Components/Video";
@@ -11,7 +10,6 @@ import Testimonials from "../../Components/Testimonials";
 import Footer from "../../Components/Footer";
 
 function Home() {
-  const navigate = useNavigate();
   return (
     <S.HomeContainer>
       <Header />
