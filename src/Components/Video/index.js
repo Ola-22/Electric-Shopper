@@ -1,5 +1,5 @@
 import * as S from "./style";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 function Video() {
   const [playing, setPlaying] = useState(false);
