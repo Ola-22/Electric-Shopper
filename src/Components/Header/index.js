@@ -1,3 +1,5 @@
+import Menu from "./Menu";
+import Navbar from "./Navbar";
 import * as S from "./style";
 
 function Header() {
@@ -7,28 +9,8 @@ function Header() {
         <div className="logo-container">
           <img src="./images/logo.png" alt="logo img" />
         </div>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
 
-          <li>
-            <a href="/">Who we are</a>
-          </li>
-
-          <li>
-            <a href="/">Features</a>
-          </li>
-
-          <li>
-            <a href="/">Testimonials</a>
-          </li>
-
-          <li>
-            <a href="/">Contact Us</a>
-          </li>
-        </ul>
-
+        <Menu />
         <button>download app</button>
       </S.NavContainer>
 
