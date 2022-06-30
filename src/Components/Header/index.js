@@ -1,5 +1,4 @@
 import Menu from "./Menu";
-import Navbar from "./Navbar";
 import * as S from "./style";
 
 function Header() {
