@@ -133,3 +133,54 @@ export const ContentDesign = styled.div`
     }
   }
 `;
+
+export const Ul = styled.ul`
+  list-style: none;
+  display: flex;
+  max-width: 478px;
+  width: 100%;
+  justify-content: space-between;
+
+  @font-face {
+    font-family: "NeoSansArabicMedium";
+    src: local("NeoSansArabicMedium"),
+      url("./fonts/NeoSansArabicMedium.ttf") format("truetype");
+    font-display: fallback;
+  }
+
+  font-family: "NeoSansArabicMedium";
+  & li {
+    margin-left: 20px;
+    & a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: normal;
+
+      @media (max-width: 800px) {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 980px) {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 980px) {
+    flex-flow: column nowrap;
+    background-color: #6140e9;
+    position: fixed;
+    align-items: center;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    padding-top: 3.5rem;
+    transition: ${({ open }) =>
+      open ? "transform 0.3s ease-in-out" : "translateX(100%)"};
+    z-index: 222;
+    max-width: 100% !important;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+`;
