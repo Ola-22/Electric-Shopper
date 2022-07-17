@@ -57,7 +57,7 @@ function Testimonials() {
   };
 
   return (
-    <S.TestimonialsContainer>
+    <S.TestimonialsContainer id="testimonials">
       <h6>Customer Reviews</h6>
       <p>Some feedback from happy customers About our products</p>
 

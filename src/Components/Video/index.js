@@ -17,7 +17,7 @@ function Video() {
   };
 
   return (
-    <S.videoContainer>
+    <S.videoContainer id="who-we-are">
       <video
         ref={(video) => {
           videoRef.current = video;

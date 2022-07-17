@@ -2,7 +2,7 @@ import * as S from "./style";
 
 function MostLike() {
   return (
-    <S.LikeContainer>
+    <S.LikeContainer id="features">
       <div className="container">
         <h3>You will most likely get better application at all</h3>
         <p className="para">

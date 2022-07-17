@@ -24,7 +24,7 @@ function Footer() {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <S.FooterContainer>
+    <S.FooterContainer id="contact-us">
       <img src="./images/Bakesh-Logo.png" alt="Bakesh-Logo" />
 
       <S.SocialMedia>

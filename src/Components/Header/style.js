@@ -20,8 +20,10 @@ export const HeaderContainer = styled.div`
     border-radius: 16px;
   }
 
-  @media (max-width: 600px) {
-    background-size: cover;
+  @media (max-width: 700px) {
+    background-size: inherit;
+    background-color: #6140e9;
+    padding-bottom: 10px;
   }
 `;
 
@@ -85,8 +87,9 @@ export const ContentDesign = styled.div`
     width: 100%;
     padding-top: 64.5px;
 
-    @media (max-width: 600px) {
-      font-size: 20px;
+    @media (max-width: 500px) {
+      font-size: 16px;
+      padding-top: 10px;
     }
   }
 
@@ -97,8 +100,9 @@ export const ContentDesign = styled.div`
     width: 100%;
     margin-top: 26px;
     line-height: 1.5;
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       font-size: 14px;
+      margin-top: 10px;
     }
   }
 
@@ -115,6 +119,10 @@ export const ContentDesign = styled.div`
     & .Bitmap {
       position: absolute;
       top: 78%;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
   }
 
@@ -127,6 +135,10 @@ export const ContentDesign = styled.div`
     justify-content: space-between;
     max-width: 621px;
     width: 100%;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
 
     & img {
       max-width: 100%;
